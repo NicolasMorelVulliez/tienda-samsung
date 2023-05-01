@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado Celulares</title>
+</head>
+
+<body>
+    <ul id="listado-productos">
+        <li>
+            <h3>Samsung S22</h3>
+            <img src="./img/S22.JPG" alt="S22">
+            <p>$145000</p>
+            <button onclick="agregarCarrito('Samsung S22', 145000)">Agregar</button>
+        </li>
+        <li>
+            <h3>Samsung S21 FE 5G</h3>
+            <img src="./img/S21FE.png" alt="S21FE">
+            <p>$150000</p>
+            <button onclick="agregarCarrito('Samsung S22 FE 5G', 150000)">Agregar</button>
+        </li>
+        <li>
+            <h3>Samsung S23</h3>
+            <img src="./img/S23.jpg" alt="S23">
+            <p>$200000</p>
+            <button onclick="agregarCarrito('Samsung S23', 200000)">Agregar</button>
+        </li>
+        <li>
+            <h3>Samsung S23+ </h3>
+            <img src="./img/S23+.JPG" alt="S23+">
+            <p>$225000</p>
+            <button onclick="agregarCarrito('Samsung S23+', 225000)">Agregar</button>
+        </li>
+        
+    </ul>
+    
+    <button onclick="mostrarCarrito()">Mostrar carrito</button>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
