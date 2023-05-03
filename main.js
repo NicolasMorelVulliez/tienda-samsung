@@ -14,9 +14,11 @@ function agregarCarrito(nombre, precio) {
 function mostrarCarrito() {
     let productosCarrito = "";
     let precioTotal = 0;
-    for (let i = 0; i < carrito.length; i++) {
-        productosCarrito += carrito[i].nombre + " - $" + carrito[i].precio + "\n";
-        precioTotal += carrito[i].precio;
-    }
+    carrito.forEach(function(producto){
+        productosCarrito += producto.nombre + "-$" + producto.precio + "\n";
+        precioTotal += producto.precio
+    })
+    
+    
     alert("Tu carrito:\n" + productosCarrito + "\n Precio total: $" + precioTotal);
 }
