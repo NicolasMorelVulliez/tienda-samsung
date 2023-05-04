@@ -1,10 +1,19 @@
 let carrito = [];
+const botonAgregarS22 = document.getElementById("boton-agregar-s22");
+const botonAgregarS21 = document.getElementById("boton-agregar-s21");
+const botonAgregarS23 = document.getElementById("boton-agregar-s23");
+const botonAgregarS23plus = document.getElementById("boton-agregar-s23+");
+
+botonAgregarS22.addEventListener("click", () => { agregarCarrito("Samsung S22", 145_000) });
+botonAgregarS21.addEventListener("click", () => { agregarCarrito("Samsung S21", 150_000) });
+botonAgregarS23.addEventListener("click", () => { agregarCarrito("Samsung S23", 200_000) });
+botonAgregarS23plus.addEventListener("click", () => { agregarCarrito("Samsung S23+", 225_000) });
 
 
 
 
 function agregarCarrito(nombre, precio) {
-    let producto = {
+    const producto = {
         nombre: nombre,
         precio: precio,
     };
@@ -12,6 +21,8 @@ function agregarCarrito(nombre, precio) {
     console.log(carrito);
     alert(nombre + " fue agregado al carrito")
 }
+
+
 
 
 const botonCarrito = document.getElementById("boton-carrito");
